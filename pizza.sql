@@ -5,10 +5,6 @@ SELECT*FROM  pizza_data;
 -- KPIs
 -- Total revenue
 SELECT SUM(total_price) AS Total_Revenuen FROM pizza_data; 
-
--- Average Order Value
-SELECT (SUM(total_price) / COUNT(DISTINCT order_id)) AS Avg_order_Value FROM pizza_data;
-
 -- Total Orders
 SELECT COUNT(DISTINCT order_id) AS Total_Orders FROM pizza_data;
 
